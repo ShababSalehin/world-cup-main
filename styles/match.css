@@ -12,8 +12,7 @@ main{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 2000px;
-    margin: 0 0 0 0;
+    height: 1600px;
 }
 
 /* Top Banner Section */
@@ -99,7 +98,7 @@ color: #FFFFFF;
 display: flex;
     width: 85%;
     height: fit-content;
-    margin: 3% 0 15% 0;
+    margin: 3% 0 0 0;
 background-color: #FFFFFF;
 border-radius: 30px;
 padding: 30px 30px 0 30px;
@@ -125,6 +124,15 @@ gap: 24px;
     border-radius: 5px;
     text-align: center;
 }  
+  
+#upcoming-matches{
+    line-height: 30px;
+    text-align: center;
+    background-color: #DD0000;
+}  
+#upcoming-matches a{
+    color: #FFFFFF;
+}
 #all-groups{
     line-height: 60px;
     text-align: center;
@@ -132,10 +140,6 @@ gap: 24px;
 #blogs{
     line-height: 60px;
     text-align: center;
-    background-color: #DD0000;
-}  
-#blogs a{
-    color: #FFFFFF;
 }
 .update-btn a{
     font-weight: 400;
@@ -152,46 +156,51 @@ text-decoration: none;
 #blogs:hover{
     background-color: #DD0000;
 }
-.transfers{
+.matches{
     width: 75%;
-    height: fit-content;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 24px;
     grid-column-gap: 24px; 
 }
-.transfer{
+.match{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    align-items: center;
+    padding: 40px 5px 40px 5px;
     width: 100%;
-    height: 100%;
+    height: fit-content;
     border: 1px solid rgb(243, 233, 233);
     border-radius: 15px;
-}
-.transfer .thumbnail img {
-width: 100%;
-border-top-left-radius: 10px;
-border-top-right-radius: 10px; 
+gap: 5px;
 }
 
-.transfer h4{
-    border: 1px solid black;
-    border-radius: 5px;
-    text-align: center;
-    margin: 0 0 0 15px;
-    width: 33%;
-}
-.transfer-title{
-    font-size: 20px;
-    margin: 0 5px 0 15px;
-}
-
-.transfer-icon{
+.flag{
     display: flex;
-    margin: 0 0 15px 15px;
-    gap: 30px;
+ width: 100%;
+   justify-content: space-evenly;
+    align-items: center;
+    margin: 0 0 10px 0;
 }
+.match h2{
+    font-size: medium;
+margin: 0 0 0 0;
+}
+.match p{
+    margin: 0 0 0 0;
+    font-size: smaller;
+   font-weight: lighter;
+   color: black;
+   opacity: .5;
+}
+.flag img{
+    width: 30%;
+}
+.flag p{
+    color: black;
+    opacity: 1;
+}
+
 
 
 /* Footer */
@@ -236,109 +245,4 @@ margin: 0 0 0 0;
     font-size: 2rem;
     color: #2EC4B6;
     margin: 0 0 15px 0;
-}
-
-/* Media Queries */
- /* Mobile */
-
- @media only screen and (min-width:280px) and (max-width:492px){
-    body{
-        margin: 0;
-        left: 0;
-        right: 0;
-    }
-main{
-    width: 100%;
-    margin: 0 0 0 0;
-    left: 0;
-    right: 0;
-}
-    .container
-    {
-     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    margin: 20px 0 0 0;
-    gap: 0;
-    width: 80%;
-    }
-    .about-site{
-    width: 100%;
-    height: 50%;
-    text-align: center;
-    padding: 0 30px 0 30px;
-    }
-    .about-site h1{
-        font-size: 35px;
-        margin: 0 0 0 0;
-    }
-    .about-site p{
-        text-align: center;
-        width: 100%;
-        margin: 0 0 20px 0;
-        padding: 0 0 0 0;
-    }
-    .about-btn{
-        margin: auto;
-    }
-    .about-pic{
-        width: 100%;
-        height: 50%;
-    }
-    .middle{
-        flex-direction: column;
-    }
-    .updates{
-        margin: auto;
-        background-color: #FFFFFF;
-    }
- }
-
-@media only screen and (min-width:493px) and  (max-width:857px){
-
-    main{
-        left: 0;
-        right: 0;
-    }
-.container
-{
- flex-direction: column;
-justify-content: center;
-align-items: center;
-height: 100%;
-margin: 20px 0 0 0;
-gap: 0;
-width: 80%;
-}
-.about-site{
-width: 100%;
-height: 50%;
-text-align: center;
-padding: 0 30px 0 30px;
-}
-.about-site h1{
-    font-size: 35px;
-    margin: 0 0 0 0;
-}
-.about-site p{
-    text-align: center;
-    width: 100%;
-    margin: 0 0 20px 0;
-    padding: 0 0 0 0;
-}
-.about-btn{
-    margin: auto;
-}
-.about-pic{
-    width: 100%;
-    height: 50%;
-}
-.middle{
-    flex-direction: column;
-}
-.updates{
-    margin: auto;
-    background-color: #FFFFFF;
-}
 }
