@@ -12,7 +12,8 @@ main{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 1600px;
+    height: fit-content;
+    margin: 0 0 0 0;
 }
 
 /* Top Banner Section */
@@ -98,7 +99,7 @@ color: #FFFFFF;
 display: flex;
     width: 85%;
     height: fit-content;
-    margin: 3% 0 0 0;
+    margin: 3% 0 30px 0;
 background-color: #FFFFFF;
 border-radius: 30px;
 padding: 30px 30px 0 30px;
@@ -106,7 +107,7 @@ gap: 24px;
 }
 .updates{
     width: 25%;
-    border: 1px solid rgb(243, 233, 233);
+    border: 1px solid rgb(243, 233,3) 23;
     background-color: #161616;
     border-radius: 15px;
     height: fit-content;
@@ -246,3 +247,152 @@ margin: 0 0 0 0;
     color: #2EC4B6;
     margin: 0 0 15px 0;
 }
+
+
+/* Media Queries */
+ /* Mobile */
+ @media only screen and (max-width:570px){
+
+    .container
+    {
+     width: 80%;
+     flex-direction: column;
+     justify-content: center;
+    align-items: center;
+    height: fit-content;
+  gap: 0;
+    padding-top: 15px;
+   
+    }
+    .about-site{
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    font-size: small;
+    padding: 0;
+    }
+    .about-site h1{
+        font-size: x-large;
+        padding-bottom: 0;
+        padding: 10px 0 10px 0;
+    }
+    .about-site p{
+        font-size: smaller;
+        padding-bottom: 20px;
+    }
+    .about-btn {
+margin: auto;
+width: 60%;
+height: fit-content;
+    }
+        
+    .about-pic{
+        width: 100%;
+        height: 50%;
+        margin: auto;
+       padding-bottom: 0;    
+    }
+    .about-pic img{
+        margin: 0;
+        padding: 0;
+        height: fit-content;
+        width: 100%;
+    }
+    
+    .middle{
+        flex-direction: column;
+        margin: 0 0 30px 0;
+        padding: 0;
+    }
+    .updates{
+        margin: auto;
+        background: none;
+        border: none;
+      
+    }
+    .update-btn{
+        height: auto;
+        border: 1px solid rgb(231, 222, 222);
+        border-radius: 15px;
+        margin: 10px;
+    }
+    .matches{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    footer{
+        
+   bottom:0;
+   width:100%;
+   height: auto;
+   padding: 0 0 0 0;
+   margin: 0;
+   gap: 0;
+    }
+    footer h2{
+        margin: 10px 0 10px 0;
+    }
+    .terms{
+        flex-direction: column;
+        margin: 20px 0 40px 0;
+    }
+    .social-links{
+        font-size: smaller;
+    }
+
+ }
+
+ /* Tablet */
+ @media only screen and (min-width:571px) and (max-width:992px){
+  
+   
+.about-site{
+    padding: 0 0 0 0;
+}   
+
+.about-site h1{
+    font-size: 29px;
+    padding: 0 0 20px 0;
+}
+.about-site p{
+    font-size: medium;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+.about-btn {
+
+width: 70%;
+height: 60px;
+}
+        .middle{
+            flex-direction: column;
+            margin: 0 0 30px 0;
+            padding: 0;
+            align-items: center;
+        }
+        .updates{
+            flex-direction: row;
+         width: 100%;
+         gap: 30px;
+            background: none;
+            border: none;
+        }
+        .update-btn{
+           
+            height: fit-content;
+            border: 1px solid rgb(231, 222, 222);
+            border-radius: 15px;
+            
+        }
+        .matches{
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+        }
+      
+    }
